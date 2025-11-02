@@ -71,13 +71,13 @@ const rowData = [
     inStock: false,
   },
 ];
-//filter out "Electronics" product only
-const electronicsGoods = rowData.filter((product) => {
-  return product.category == "Electronics";
-});
-// now get only best rating product
-const sortedHighToLowRating = electronicsGoods
-  .sort((a, b) => b.rating - a.rating)
-  .slice(0, 3);
-const answers = sortedHighToLowRating.map((product) => product.name);
-console.log(answers);
+const numbers = [12, 32, 53, 234, 234, 23, 6, 7, 1];
+const totalPrice = rowData.reduce((total, num) => {});
+const ans = numbers.reduce((prevValue, currentValue) => {
+  return prevValue + currentValue;
+}, 0);
+// console.log(ans);
+const subTotal = rowData.reduce((prevValue, currentValue) => {
+  return prevValue + currentValue.price;
+}, 0);
+console.log(subTotal);
