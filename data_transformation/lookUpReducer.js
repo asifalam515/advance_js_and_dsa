@@ -25,4 +25,4 @@ const lookUpPlayersTable = players.reduce((acc, player) => {
   return acc;
 });
 const player = lookUpPlayersTable["3"];
-console.log(player);
+console.log(lookUpCountriesTable);
