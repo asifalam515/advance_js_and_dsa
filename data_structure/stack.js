@@ -11,11 +11,11 @@ class Stack {
     }
     return this.items.pop();
   }
-  peek() {
+  top() {
     if (this.isEmpty()) {
       return undefined;
     }
-    return this.items[this.items.length - 1];
+    console.log(this.items[this.items.length - 1]);
   }
   isEmpty() {
     return this.items.length === 0;
@@ -26,7 +26,11 @@ class Stack {
 }
 const myStack = new Stack();
 myStack.push(10);
-myStack.push(230);
-myStack.push(350);
+myStack.push(20);
+myStack.push(40);
+myStack.pop();
+myStack.pop();
+myStack.pop();
+myStack.pop();
 myStack.pop();
 myStack.print();
