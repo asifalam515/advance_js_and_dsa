@@ -23,7 +23,11 @@ class LinkedList {
     }
     this.length++;
   }
-  prepend() {}
+  prepend(value) {
+    const newNode = new Node(value);
+    newNode.next = this.head;
+    this.head = newNode;
+  }
   insert() {}
   remove() {}
   print() {
@@ -40,4 +44,5 @@ const myLL = new LinkedList();
 myLL.append(10);
 myLL.append(20);
 myLL.append(3);
+myLL.prepend(1000);
 myLL.print();
